@@ -24,7 +24,7 @@ const getCatalogue = async () => {
     `).join('');
 
     catalogueContainer.innerHTML = output;
-    // addCartEventListeners();
+    addCartEventListeners();
   } 
   catch (error) {
     console.error('Failed to fetch catalogue:', error);
