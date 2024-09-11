@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+.menu {
+    text-align: right; /* Aligns the entire menu to the right */
+  }
+  
+  /* Remove default list styling */
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style each list item */
+  .menu ul li {
+    display: inline-block; /* Display list items in a horizontal line */
+    margin-left: 20px; /* Add some space between the menu items */
+  }
+  
+  /* Style for the anchor links */
+  .menu ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    font-size: 16px; /* Font size */
+    padding: 5px 10px; /* Padding around the link */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for the links */
+  .menu ul li a:hover {
+    color: #ff6600; /* Change color on hover */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.payment-section {
+    display: none;
+}
+.payment-section.active {
+    display: block;
+}
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #218838;
+}
+.payment-details {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-details h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.payment-details p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.payment-details strong {
+    color: #333;
+}

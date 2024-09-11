@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Payment</title>
+    <title>Product list with cart</title>
+    <link rel="stylesheet"href="pay.css">
+</head>
+<body>
+    <div class="menu text-right">
+        <ul>
+        <li>
+        <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="order.html">Order</a>
+          </li>
+        <li>
+        <a href="services.html">Services</a>
+        </li>  
+        <li>
+        <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="payment.html">Payment Details</a>
+          </li>
+        </ul>
+        </div> 
+        <h1>Food Order Payment</h1>
+
+        <form id="paymentForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+    
+            <label for="paymentMethod">Select Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="" disabled selected>Select a method</option>
+                <option value="visa">Visa</option>
+                <option value="paypal">PayPal</option>
+                <option value="mpesa">M-Pesa</option>
+            </select>
+    
+            <!-- Visa Section -->
+            <div id="visaSection" class="payment-section">
+                <h3>Visa Payment Details</h3>
+                <label for="visaCardNumber">Card Number:</label>
+                <input type="text" id="visaCardNumber" name="visaCardNumber" placeholder="1234 5678 9012 3456">
+                
+                <label for="visaExpiryDate">Expiry Date:</label>
+                <input type="text" id="visaExpiryDate" name="visaExpiryDate" placeholder="MM/YY">
+                
+                <label for="visaCvv">CVV:</label>
+                <input type="number" id="visaCvv" name="visaCvv" placeholder="123">
+            </div>
+    
+            <!-- PayPal Section -->
+            <div id="paypalSection" class="payment-section">
+                <h3>PayPal Payment Details</h3>
+                <label for="paypalEmail">PayPal Email:</label>
+                <input type="email" id="paypalEmail" name="paypalEmail" placeholder="example@domain.com">
+            </div>
+    
+            <!-- M-Pesa Section -->
+            <div id="mpesaSection" class="payment-section">
+                <h3>M-Pesa Payment Details</h3>
+                <label for="mpesaNumber">M-Pesa Number:</label>
+                <input type="text" id="mpesaNumber" name="mpesaNumber" placeholder="07XXXXXXXX">
+                
+                <label for="mpesaTillNumber">M-Pesa Till Number:</label>
+                <input type="text" id="mpesaTillNumber" name="mpesaTillNumber" placeholder="XXXXX">
+            </div>
+    
+            <button type="submit" id="message">Submit Payment</button>
+        </form>
+        <script src="pay.js"></script>
+</body>
+</html>
